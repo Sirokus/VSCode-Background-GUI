@@ -20,7 +20,7 @@ After clicking on the current wallpaper group in the application, the settings. 
 8. After selecting automatic randomization, the system will automatically shuffle once before automatic replacement
 9. The remaining parameters are directly operated on the fields of settings. json, and can be used as needed
 
-
+The most important thing is not to attempt to explore the boundaries of the program, as I haven't done any boundary testing. I can only guarantee that it runs roughly correctly from the normal process. Use it with caution and have a good day! :)
 
 
 
@@ -53,3 +53,5 @@ background - shalldie 的最大优势是我目前仅在其扩展上发现了UseF
 8. 勾选自动随机后，系统自动替换前会自动进行一次打乱
 
 9. 剩余的参数则是直接操作settings.json的字段的，按需使用
+
+最重要的一点是，不要尝试探索该程序的边界，因为我一点边界测试都没做，我只能保证从正常流程运行的大致正确，小心使用，祝好运！:)
