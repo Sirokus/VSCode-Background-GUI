@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSC-BackgroundSetting", "VSC-BackgroundSetting.csproj", "{FF3B65B8-6343-4E1B-864B-0B9F14E2E30A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "VSC-BackgroundSetting_Build", "..\VSC-BackgroundSetting_Build\VSC-BackgroundSetting_Build.vdproj", "{5698F315-14CE-489E-BCC3-5A40DE61BCB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF3B65B8-6343-4E1B-864B-0B9F14E2E30A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF3B65B8-6343-4E1B-864B-0B9F14E2E30A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF3B65B8-6343-4E1B-864B-0B9F14E2E30A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF3B65B8-6343-4E1B-864B-0B9F14E2E30A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5698F315-14CE-489E-BCC3-5A40DE61BCB0}.Debug|Any CPU.ActiveCfg = Debug
+		{5698F315-14CE-489E-BCC3-5A40DE61BCB0}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2ADC8B46-0F40-4078-A675-085687D2499B}
+	EndGlobalSection
+EndGlobal
