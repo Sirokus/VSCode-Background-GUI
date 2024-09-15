@@ -15,14 +15,16 @@ namespace VSC_BackgroundSetting
         private bool isSlideShow;
         private bool isAutoRandom;
 
-        private string aliginType;
-        private string repeatType;
+        private int aliginType;
+        private int repeatType;
         
         private int previewImgNum;
         private int singleInterval;
         private float groupInterval;
 
         public static bool isAnalysised = false;
+
+        public bool useEnglish = false;
 
         public MainForm()
         {
@@ -39,6 +41,10 @@ namespace VSC_BackgroundSetting
 
         private void ReadData()
         {
+            useEnglish = SaveManager.Ins.data.useEnglish;
+            if (useEnglish)
+                Btn_SwitchLanguage_Click(null, null);
+
             usedTextPath = SaveManager.Ins.data.usedPath;
             previewImgNum = SaveManager.Ins.data.previewImgNum;
             singleInterval = SaveManager.Ins.data.singleInterval;
@@ -64,8 +70,8 @@ namespace VSC_BackgroundSetting
             CB_IsAutoRandom.Checked = isAutoRandom;
             CB_IsSlideShow.Checked = isSlideShow;
 
-            CB_AlignType.Text = aliginType;
-            CB_RepeatType.Text = repeatType;
+            CB_AlignType.SelectedIndex = aliginType;
+            CB_RepeatType.SelectedIndex = repeatType;
 
             if (!isAnalysised)
                 TimerManager.Ins.Stop();
@@ -336,65 +342,71 @@ namespace VSC_BackgroundSetting
         }
         private void CB_AlignType_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (!isAnalysised)
+                return;
+
             string cssCode = "";
-            switch(CB_AlignType.Text)
+            switch(CB_AlignType.SelectedIndex)
             {
-            case "居中":
+            case 0:
                 cssCode = "center";
                 break;
-            case "右":
+            case 1:
                 cssCode = "90%";
                 break;
-            case "左":
+            case 2:
                 cssCode = "left";
                 break;
-            case "上":
+            case 3:
                 cssCode = "upper";
                 break;
-            case "下":
+            case 4:
                 cssCode = "bottom";
                 break;
-            case "左上":
+            case 5:
                 cssCode = "left upper";
                 break;
-            case "左下":
+            case 6:
                 cssCode = "left bottom";
                 break;
-            case "右上":
+            case 7:
                 cssCode = "90% upper";
                 break;
-            case "右下":
+            case 8:
                 cssCode = "90% bottom";
                 break;
             }
 
-            aliginType = cssCode;
-            SaveManager.Ins.data.AlignType = cssCode;
+            aliginType = CB_AlignType.SelectedIndex;
+            SaveManager.Ins.data.AlignType = CB_AlignType.SelectedIndex;
             SaveManager.Ins.SaveData();
 
             VSCSettings.Ins.SetBackgroundAlignStyle(cssCode);
         }
         private void CB_RepeatType_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (!isAnalysised)
+                return;
+
             string cssCode = "";
-            switch (CB_RepeatType.Text)
+            switch (CB_RepeatType.SelectedIndex)
             {
-            case "无":
+            case 0:
                 cssCode = "no-repeat";
                 break;
-            case "水平":
+            case 1:
                 cssCode = "repeat-x";
                 break;
-            case "垂直":
+            case 2:
                 cssCode = "repeat-y";
                 break;
-            case "全铺":
+            case 3:
                 cssCode = "repeat";
                 break;
             }
 
-            repeatType = cssCode;
-            SaveManager.Ins.data.RpeatType = cssCode;
+            repeatType = CB_RepeatType.SelectedIndex;
+            SaveManager.Ins.data.RpeatType = CB_RepeatType.SelectedIndex;
             SaveManager.Ins.SaveData();
 
             VSCSettings.Ins.SetbackgroundRepeatType(cssCode);
@@ -553,5 +565,29 @@ namespace VSC_BackgroundSetting
         }
 
         #endregion
+
+        private void Btn_SwitchLanguage_Click(object sender, EventArgs e)
+        {
+            int currentLcid = System.Threading.Thread.CurrentThread.CurrentUICulture.LCID;
+            currentLcid = (currentLcid == 2052) ? 1033 : 2052;//这里的2052是中文   1033是英文
+            System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(currentLcid);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            //resources.ApplyResources(label1, "label1");
+            //resources.ApplyResources(button1, "button1");
+            //resources.ApplyResources(this, "$this");
+
+            foreach (Control ct in this.Controls)//循环当前界面所有的控件
+            {
+                resources.ApplyResources(ct, ct.Name);
+                if (ct.HasChildren)
+                {
+                    resources.ApplyResources(ct, ct.Name);
+                }
+            }
+
+            useEnglish = !useEnglish;
+            SaveManager.Ins.data.useEnglish = useEnglish;
+            SaveManager.Ins.SaveData();
+        }
     }
 }

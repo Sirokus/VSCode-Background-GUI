@@ -15,10 +15,11 @@ public class Data
     public float groupInterval = 60;
     public bool isAutoRandom = false;
     public bool isSlideShow = false;
-    public string AlignType = "右";
-    public string RpeatType = "无";
+    public int AlignType = 1;
+    public int RpeatType = 0;
 
     public bool isAnalysised = false;
+    public bool useEnglish = false;
 }
 
 public class SaveManager
