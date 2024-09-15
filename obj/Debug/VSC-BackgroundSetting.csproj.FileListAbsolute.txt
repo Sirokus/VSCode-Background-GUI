@@ -1,0 +1,13 @@
+E:\.Works\CS\VSC-BackgroundSetting\bin\Debug\VSC-BackgroundSetting.exe.config
+E:\.Works\CS\VSC-BackgroundSetting\bin\Debug\VSC-BackgroundSetting.exe
+E:\.Works\CS\VSC-BackgroundSetting\bin\Debug\VSC-BackgroundSetting.pdb
+E:\.Works\CS\VSC-BackgroundSetting\obj\Debug\VSC-BackgroundSetting.csproj.AssemblyReference.cache
+E:\.Works\CS\VSC-BackgroundSetting\obj\Debug\VSC_BackgroundSetting.MainForm.resources
+E:\.Works\CS\VSC-BackgroundSetting\obj\Debug\VSC_BackgroundSetting.Properties.Resources.resources
+E:\.Works\CS\VSC-BackgroundSetting\obj\Debug\VSC-BackgroundSetting.csproj.GenerateResource.cache
+E:\.Works\CS\VSC-BackgroundSetting\obj\Debug\VSC-BackgroundSetting.csproj.CoreCompileInputs.cache
+E:\.Works\CS\VSC-BackgroundSetting\obj\Debug\VSC-BackgroundSetting.exe
+E:\.Works\CS\VSC-BackgroundSetting\obj\Debug\VSC-BackgroundSetting.pdb
+E:\.Works\CS\VSC-BackgroundSetting\bin\Debug\Newtonsoft.Json.dll
+E:\.Works\CS\VSC-BackgroundSetting\bin\Debug\Newtonsoft.Json.xml
+E:\.Works\CS\VSC-BackgroundSetting\obj\Debug\VSC-BackgroundSetting.csproj.CopyComplete
