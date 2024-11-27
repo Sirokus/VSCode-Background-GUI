@@ -1193,6 +1193,21 @@
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>370, 16</value>
   </metadata>
+  <data name="showWindow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="showWindow.Text" xml:space="preserve">
+    <value>显示窗口</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 6</value>
+  </data>
+  <data name="quit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="quit.Text" xml:space="preserve">
+    <value>退出</value>
+  </data>
   <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 54</value>
   </data>
@@ -2648,25 +2663,10 @@
 </value>
   </data>
   <data name="notifyIcon1.Text" xml:space="preserve">
-    <value>notifyIcon1</value>
+    <value>VSC-Background-GUI</value>
   </data>
   <data name="notifyIcon1.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="showWindow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="showWindow.Text" xml:space="preserve">
-    <value>显示窗口</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 6</value>
-  </data>
-  <data name="quit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="quit.Text" xml:space="preserve">
-    <value>退出</value>
   </data>
   <data name="Btn_SwitchLanguage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
