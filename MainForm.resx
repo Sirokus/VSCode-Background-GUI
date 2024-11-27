@@ -164,8 +164,8 @@
   <data name="dataGrid.Size" type="System.Drawing.Size, System.Drawing">
     <value>429, 441</value>
   </data>
-  <data name="TB_SingleInterval.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 21</value>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
   </data>
   <data name="&gt;&gt;Btn_SwitchLanguage.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -175,9 +175,6 @@
   </data>
   <data name="TB_RemainGroupTimes.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 21</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
   </data>
   <data name="&gt;&gt;TB_GroupInterval.ZOrder" xml:space="preserve">
     <value>13</value>
@@ -203,6 +200,9 @@
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>766, 203</value>
+  </data>
   <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
     <value>toolStripSeparator1</value>
   </data>
@@ -218,8 +218,8 @@
   <data name="TB_TargetPath.Size" type="System.Drawing.Size, System.Drawing">
     <value>391, 23</value>
   </data>
-  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>663, 172</value>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TB_TargetPath.ZOrder" xml:space="preserve">
     <value>34</value>
@@ -239,8 +239,8 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>27</value>
   </data>
-  <data name="&gt;&gt;TB_TargetPath.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
   </data>
   <data name="CB_IsSlideShow.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -277,11 +277,11 @@
   <data name="&gt;&gt;showWindow.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Btn_SelectSettingsPath.Name" xml:space="preserve">
-    <value>Btn_SelectSettingsPath</value>
-  </data>
   <data name="&gt;&gt;Btn_ClearTxt.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="CB_IsAutoRandom.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>893, 591</value>
@@ -289,14 +289,8 @@
   <data name="Btn_RandomList.Text" xml:space="preserve">
     <value>随机顺序</value>
   </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-  </data>
   <data name="&gt;&gt;TB_CurUsedGroup.Name" xml:space="preserve">
     <value>TB_CurUsedGroup</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;notifyIcon1.Name" xml:space="preserve">
     <value>notifyIcon1</value>
@@ -304,11 +298,8 @@
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
   </data>
-  <data name="quit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="TB_settingsPath.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;Btn_SelectSettingsPath.Name" xml:space="preserve">
+    <value>Btn_SelectSettingsPath</value>
   </data>
   <data name="Btn_RandomList.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -322,8 +313,11 @@
   <data name="CB_AlignType.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
   </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CB_RepeatType.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="&gt;&gt;TB_RemainGroupTimes.Name" xml:space="preserve">
     <value>TB_RemainGroupTimes</value>
@@ -336,9 +330,6 @@
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 12</value>
-  </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -358,11 +349,8 @@
   <data name="TB_CurUsedGroup.Location" type="System.Drawing.Point, System.Drawing">
     <value>464, 100</value>
   </data>
-  <data name="&gt;&gt;TB_TargetPath.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TB_CurSelectedGroup.ZOrder" xml:space="preserve">
-    <value>21</value>
+  <data name="TB_SingleInterval.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 21</value>
   </data>
   <data name="&gt;&gt;CB_RepeatType.Name" xml:space="preserve">
     <value>CB_RepeatType</value>
@@ -392,14 +380,17 @@
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 6</value>
   </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>31</value>
+  <data name="&gt;&gt;TB_GroupInterval.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="&gt;&gt;quit.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TB_CurUsedGroup.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -461,14 +452,17 @@
   <data name="TB_CurSelectedGroup.Location" type="System.Drawing.Point, System.Drawing">
     <value>464, 160</value>
   </data>
-  <data name="CB_RepeatType.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
+  <data name="quit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
   </data>
   <data name="&gt;&gt;TB_MaxBGgroupNum.ZOrder" xml:space="preserve">
     <value>30</value>
   </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="label11.Text" xml:space="preserve">
+    <value>余时</value>
+  </data>
+  <data name="TB_MaxBGgroupNum.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;CB_IsAutoRandom.Parent" xml:space="preserve">
     <value>$this</value>
@@ -482,8 +476,8 @@
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
   </data>
-  <data name="CB_IsAutoRandom.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="Btn_SwitchLanguage.Text" xml:space="preserve">
+    <value>Switch Language</value>
   </data>
   <data name="&gt;&gt;TB_CurSelectedGroup.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -496,6 +490,9 @@
   </data>
   <data name="&gt;&gt;CB_IsSlideShow.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>663, 172</value>
   </data>
   <data name="&gt;&gt;TB_RemainGroupTimes.Parent" xml:space="preserve">
     <value>$this</value>
@@ -548,11 +545,11 @@
   <data name="&gt;&gt;TB_settingsPath.ZOrder" xml:space="preserve">
     <value>28</value>
   </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;Btn_RandomList.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGrid.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>464, 202</value>
@@ -563,14 +560,8 @@
   <data name="&gt;&gt;CB_IsAutoRandom.Name" xml:space="preserve">
     <value>CB_IsAutoRandom</value>
   </data>
-  <data name="Btn_SwitchLanguage.Text" xml:space="preserve">
-    <value>Switch Language</value>
-  </data>
   <data name="BGAnalysisBtn.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -584,20 +575,17 @@
   <data name="&gt;&gt;label7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>22</value>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
   </data>
   <data name="&gt;&gt;CB_AlignType.Type" xml:space="preserve">
     <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
-    <value>contextMenuStrip1</value>
+  <data name="Btn_Apply.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>当前壁纸组</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Btn_SelectSettingsPath.ZOrder" xml:space="preserve">
     <value>26</value>
@@ -614,8 +602,8 @@
   <data name="&gt;&gt;TB_previewImgNum.Name" xml:space="preserve">
     <value>TB_previewImgNum</value>
   </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="TB_SingleInterval.Location" type="System.Drawing.Point, System.Drawing">
     <value>665, 199</value>
@@ -632,20 +620,17 @@
   <data name="BGnum.HeaderText" xml:space="preserve">
     <value>壁纸数量</value>
   </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
   </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>766, 203</value>
-  </data>
-  <data name="&gt;&gt;TB_TargetPath.Name" xml:space="preserve">
-    <value>TB_TargetPath</value>
+  <data name="&gt;&gt;dataGrid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 12</value>
   </data>
-  <data name="TB_SingleInterval.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
+  <data name="&gt;&gt;TB_MaxBGgroupNum.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TB_CurUsedGroup.ZOrder" xml:space="preserve">
     <value>23</value>
@@ -664,6 +649,9 @@
   </data>
   <data name="&gt;&gt;dataGrid.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TB_TargetPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="notifyIcon1.Text" xml:space="preserve">
     <value>notifyIcon1</value>
@@ -703,8 +691,8 @@
   <data name="&gt;&gt;TB_RemainGroupTimes.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;TB_TargetPath.Name" xml:space="preserve">
+    <value>TB_TargetPath</value>
   </data>
   <data name="&gt;&gt;TB_previewImgNum.Parent" xml:space="preserve">
     <value>$this</value>
@@ -717,6 +705,9 @@
   </data>
   <data name="&gt;&gt;BGgroup.Name" xml:space="preserve">
     <value>BGgroup</value>
+  </data>
+  <data name="TB_settingsPath.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;Btn_SelectTargetPath.Parent" xml:space="preserve">
     <value>$this</value>
@@ -739,8 +730,8 @@
   <data name="TB_RemainGroupTimes.Location" type="System.Drawing.Point, System.Drawing">
     <value>695, 169</value>
   </data>
-  <data name="&gt;&gt;TB_SingleInterval.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;TB_TargetPath.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;Btn_SwitchLanguage.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -799,11 +790,14 @@
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;TB_MaxBGgroupNum.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 12</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="CB_IsSlideShow.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -853,23 +847,17 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>33</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>壁纸组大小</value>
+  <data name="&gt;&gt;TB_CurSelectedGroup.ZOrder" xml:space="preserve">
+    <value>21</value>
   </data>
   <data name="&gt;&gt;CB_AlignType.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;SlideShowTimer.Name" xml:space="preserve">
-    <value>SlideShowTimer</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Btn_SelectTargetPath.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 12</value>
   </data>
   <data name="&gt;&gt;BGAnalysisBtn.ZOrder" xml:space="preserve">
     <value>35</value>
@@ -2346,9 +2334,6 @@
   <data name="TB_previewImgNum.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 21</value>
   </data>
-  <data name="Btn_Apply.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
   <data name="&gt;&gt;showWindow.Name" xml:space="preserve">
     <value>showWindow</value>
   </data>
@@ -2367,9 +2352,6 @@
   <data name="&gt;&gt;label12.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="TB_MaxBGgroupNum.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
   <data name="Btn_ClearTxt.Location" type="System.Drawing.Point, System.Drawing">
     <value>225, 79</value>
   </data>
@@ -2382,8 +2364,8 @@
   <data name="dataGrid.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="TB_MaxBGgroupNum.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 100</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 12</value>
@@ -2391,17 +2373,14 @@
   <data name="&gt;&gt;SlideShowTimer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="TB_MaxBGgroupNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 100</value>
-  </data>
   <data name="label12.Text" xml:space="preserve">
     <value>对齐</value>
   </data>
   <data name="&gt;&gt;TB_RemainGroupTimes.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="TB_GroupInterval.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 21</value>
+  <data name="TB_SingleInterval.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
   </data>
   <data name="imgPreview.Items2" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
@@ -2449,11 +2428,14 @@
   <data name="&gt;&gt;label13.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>当前壁纸组</value>
+  </data>
   <data name="Btn_ClearTxt.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 42</value>
   </data>
   <data name="TB_TargetPath.Text" xml:space="preserve">
-    <value>E:\媒体\秘密\18</value>
+    <value>C:\</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>单张间隔</value>
@@ -2470,8 +2452,8 @@
   <data name="label7.Text" xml:space="preserve">
     <value>轮播间隔</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;SlideShowTimer.Name" xml:space="preserve">
+    <value>SlideShowTimer</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
     <value>重复</value>
@@ -2482,8 +2464,8 @@
   <data name="&gt;&gt;Btn_Apply.Name" xml:space="preserve">
     <value>Btn_Apply</value>
   </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>壁纸组大小</value>
   </data>
   <data name="&gt;&gt;label9.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2515,8 +2497,8 @@
   <data name="&gt;&gt;TB_SingleInterval.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>余时</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="&gt;&gt;TB_SingleInterval.ZOrder" xml:space="preserve">
     <value>9</value>
@@ -2533,8 +2515,8 @@
   <data name="TB_TargetPath.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="&gt;&gt;TB_SingleInterval.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2545,11 +2527,14 @@
   <data name="&gt;&gt;Btn_SwitchLanguage.Name" xml:space="preserve">
     <value>Btn_SwitchLanguage</value>
   </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 12</value>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>31</value>
   </data>
   <data name="&gt;&gt;TB_GroupInterval.Name" xml:space="preserve">
     <value>TB_GroupInterval</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2562,6 +2547,12 @@
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TB_GroupInterval.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 21</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
@@ -2592,6 +2583,9 @@
   </data>
   <data name="&gt;&gt;CB_IsSlideShow.ZOrder" xml:space="preserve">
     <value>15</value>
+  </data>
+  <data name="&gt;&gt;BGgroup.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="TB_SingleInterval.Text" xml:space="preserve">
     <value>5</value>
@@ -4092,14 +4086,20 @@
   <data name="&gt;&gt;imgPreview.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="CB_IsAutoRandom.Location" type="System.Drawing.Point, System.Drawing">
     <value>665, 72</value>
   </data>
   <data name="CB_RepeatType.Items" xml:space="preserve">
     <value>无</value>
   </data>
-  <data name="&gt;&gt;TB_GroupInterval.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="CB_AlignType.Items6" xml:space="preserve">
     <value>左下</value>
@@ -4107,9 +4107,12 @@
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>462, 19</value>
   </data>
-  <data name="&gt;&gt;BGgroup.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>22</value>
   </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
   <metadata name="imgList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

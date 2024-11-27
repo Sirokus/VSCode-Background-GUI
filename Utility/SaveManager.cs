@@ -7,7 +7,7 @@ using System.Text;
 public class Data
 {
     public string analysisPath = "C:\\";
-    public string settingsPath = "C:\\";
+    public string settingsPath = "C:\\Users\\Administrator\\AppData\\Roaming\\Code\\User\\settings.json";
     public string usedPath = "";
     public int MaxSingleFileBGNum = 100;
     public int previewImgNum = 6;
@@ -37,7 +37,7 @@ public class SaveManager
 
     public Data data = new Data();
 
-    public const string SavePath = "C:/Program Files/MyVSCBGSettingsData";
+    public const string SavePath = "C:/Program Files/VSC-BGSettings-GUI";
     public const string SaveFile = "settings.json";
 
     public void SaveData()

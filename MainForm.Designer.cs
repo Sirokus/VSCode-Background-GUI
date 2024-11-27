@@ -455,7 +455,6 @@
         private System.Windows.Forms.Timer SlideShowTimer;
         private System.Windows.Forms.TextBox TB_RemainGroupTimes;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox CB_AlignType;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox CB_RepeatType;
@@ -467,6 +466,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BGgroup;
         private System.Windows.Forms.DataGridViewTextBoxColumn BGnum;
         private System.Windows.Forms.Button Btn_SwitchLanguage;
+        private System.Windows.Forms.ComboBox CB_AlignType;
     }
 }
 
