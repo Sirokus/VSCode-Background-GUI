@@ -91,6 +91,7 @@ namespace VSC_BackgroundSetting
                 SaveManager.Ins.SaveData();
             }
         }
+
         private void TB_TargetPath_TextChanged(object sender, EventArgs e)
         {
             SaveManager.Ins.data.analysisPath = TB_TargetPath.Text;
@@ -110,6 +111,7 @@ namespace VSC_BackgroundSetting
                 SaveManager.Ins.SaveData();
             }
         }
+
         private void TB_settingsPath_TextChanged(object sender, EventArgs e)
         {
             SaveManager.Ins.data.settingsPath = TB_settingsPath.Text;
@@ -126,6 +128,7 @@ namespace VSC_BackgroundSetting
 
             UpdateGrid();
         }
+
         private void Btn_ClearTxt_Click(object sender, EventArgs e)
         {
             BGAnalysis.Ins.ClearAllTxt(TB_TargetPath.Text);
@@ -146,6 +149,7 @@ namespace VSC_BackgroundSetting
 
             TimerManager.Ins.Stop();
         }
+
         private void TB_MaxBGgroupNum_TextChanged(object sender, EventArgs e)
         {
             BGAnalysis.Ins.MaxSingleFileBGNum = int.Parse(TB_MaxBGgroupNum.Text);
@@ -181,6 +185,7 @@ namespace VSC_BackgroundSetting
                 }
             }
         }
+
         private void OnGridSelecteChanged(object sender, EventArgs e)
         {
             if (!isAnalysised)
@@ -199,6 +204,7 @@ namespace VSC_BackgroundSetting
 
             UpdatePreview();
         }
+
         private void InitGridAction()
         {
             dataGrid.SelectionChanged += OnGridSelecteChanged;
@@ -459,15 +465,14 @@ namespace VSC_BackgroundSetting
         void SetNewGroupToVSC(string textPath)
         {
             List<string> paths = BGAnalysis.Ins.GetPaths(textPath);
+
             StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append("[");
             for (int i = 0; i <  paths.Count; i++)
             {
-                if (i == 0)
-                    stringBuilder.Append("[");
                 stringBuilder.AppendLine("\"" + "file:///" + paths[i] + "\",");
-                if (i == paths.Count - 1)
-                    stringBuilder.Append("]");
             }
+            stringBuilder.Append("]");
 
             VSCSettings.Ins.SetBackgroundList(stringBuilder.ToString());
 

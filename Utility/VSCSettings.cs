@@ -51,6 +51,8 @@ public class VSCSettings
         settingsPath = SaveManager.Ins.data.settingsPath;
         var obj = JObject.Parse(SaveManager.ReadJson(settingsPath));
 
+        CheckHaveJsonEntry(obj, "background.style");
+
         obj["background.style"]["background-position"] = alignTypeCode;
 
         string json = JsonConvert.SerializeObject(obj, Formatting.Indented);
@@ -62,9 +64,19 @@ public class VSCSettings
         settingsPath = SaveManager.Ins.data.settingsPath;
         var obj = JObject.Parse(SaveManager.ReadJson(settingsPath));
 
+        CheckHaveJsonEntry(obj, "background.style");
+
         obj["background.style"]["background-repeat"] = repeatTypeCode;
 
         string json = JsonConvert.SerializeObject(obj, Formatting.Indented);
         SaveManager.WriteJson(json, settingsPath);
+    }
+
+    public void CheckHaveJsonEntry(JObject obj, string entry)
+    {
+        if (obj[entry] != null)
+            return;
+
+        obj[entry] = new JObject();
     }
 }

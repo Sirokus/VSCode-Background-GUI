@@ -8,7 +8,6 @@ E:\.Works\CS\VSC-BackgroundSetting\obj\Release\VSC_BackgroundSetting.MainForm.re
 E:\.Works\CS\VSC-BackgroundSetting\obj\Release\VSC_BackgroundSetting.Properties.Resources.resources
 E:\.Works\CS\VSC-BackgroundSetting\obj\Release\VSC-BackgroundSetting.csproj.GenerateResource.cache
 E:\.Works\CS\VSC-BackgroundSetting\obj\Release\VSC-BackgroundSetting.csproj.CoreCompileInputs.cache
-E:\.Works\CS\VSC-BackgroundSetting\obj\Release\VSC-BackgroundSetting.csproj.CopyComplete
 E:\.Works\CS\VSC-BackgroundSetting\obj\Release\VSC-BackgroundSetting.exe
 E:\.Works\CS\VSC-BackgroundSetting\obj\Release\VSC-BackgroundSetting.pdb
 E:\.Works\CS\VSC-BackgroundSetting\bin\Release\en\VSC-BackgroundSetting.resources.dll
@@ -17,3 +16,4 @@ E:\.Works\CS\VSC-BackgroundSetting\obj\Release\VSC_BackgroundSetting.MainForm.en
 E:\.Works\CS\VSC-BackgroundSetting\obj\Release\VSC_BackgroundSetting.MainForm.zh.resources
 E:\.Works\CS\VSC-BackgroundSetting\obj\Release\en\VSC-BackgroundSetting.resources.dll
 E:\.Works\CS\VSC-BackgroundSetting\obj\Release\zh\VSC-BackgroundSetting.resources.dll
+E:\.Works\CS\VSC-BackgroundSetting\obj\Release\VSC-Back.5358A800.Up2Date
