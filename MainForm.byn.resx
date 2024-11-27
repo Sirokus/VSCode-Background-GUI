@@ -117,52 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BGAnalysisBtn.Text" xml:space="preserve">
-    <value>Parse bg files</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 12</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Need parse bg root path</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 12</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Bg group size</value>
-  </data>
-  <data name="BGgroup.HeaderText" xml:space="preserve">
-    <value>Bg group name</value>
-  </data>
-  <data name="BGnum.HeaderText" xml:space="preserve">
-    <value>Group size</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>VSCode settings.json path</value>
-  </data>
-  <data name="Btn_ClearTxt.Text" xml:space="preserve">
-    <value>Clear txt files</value>
-  </data>
-  <data name="Btn_Apply.Text" xml:space="preserve">
-    <value>Apply current group</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 12</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Current use group</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 12</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Current select group</value>
-  </data>
-  <data name="Btn_RandomList.Text" xml:space="preserve">
-    <value>Random group</value>
-  </data>
   <data name="imgPreview.Items" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
@@ -231,141 +185,7 @@
         ZW0uRHJhd2luZy5HcmFwaGljc1VuaXQBAAAAB3ZhbHVlX18ACAMAAAADAAAACw==
 </value>
   </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 12</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Preview</value>
-  </data>
-  <data name="TB_previewImgNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>517, 199</value>
-  </data>
-  <data name="CB_IsSlideShow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 94</value>
-  </data>
-  <data name="CB_IsSlideShow.Text" xml:space="preserve">
-    <value>Playback</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>706, 202</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 12</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Group timer</value>
-  </data>
-  <data name="TB_GroupInterval.Location" type="System.Drawing.Point, System.Drawing">
-    <value>778, 199</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>809, 202</value>
-  </data>
-  <data name="CB_IsAutoRandom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 73</value>
-  </data>
-  <data name="CB_IsAutoRandom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-  </data>
-  <data name="CB_IsAutoRandom.Text" xml:space="preserve">
-    <value>Auto shuffle</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>666, 202</value>
-  </data>
-  <data name="TB_SingleInterval.Location" type="System.Drawing.Point, System.Drawing">
-    <value>634, 199</value>
-  </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>556, 202</value>
-  </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 12</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Single timer</value>
-  </data>
-  <data name="TB_RemainGroupTimes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>898, 199</value>
-  </data>
-  <data name="TB_RemainGroupTimes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 21</value>
-  </data>
-  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>856, 202</value>
-  </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 12</value>
-  </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>Remain</value>
-  </data>
-  <data name="CB_AlignType.Items" xml:space="preserve">
-    <value>Center</value>
-  </data>
-  <data name="CB_AlignType.Items1" xml:space="preserve">
-    <value>Right</value>
-  </data>
-  <data name="CB_AlignType.Items2" xml:space="preserve">
-    <value>Left</value>
-  </data>
-  <data name="CB_AlignType.Items3" xml:space="preserve">
-    <value>Upper</value>
-  </data>
-  <data name="CB_AlignType.Items4" xml:space="preserve">
-    <value>Bottom</value>
-  </data>
-  <data name="CB_AlignType.Items5" xml:space="preserve">
-    <value>Left upper</value>
-  </data>
-  <data name="CB_AlignType.Items6" xml:space="preserve">
-    <value>Left bottom</value>
-  </data>
-  <data name="CB_AlignType.Items7" xml:space="preserve">
-    <value>Right upper</value>
-  </data>
-  <data name="CB_AlignType.Items8" xml:space="preserve">
-    <value>Right bottom</value>
-  </data>
-  <data name="CB_AlignType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>704, 115</value>
-  </data>
-  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>659, 118</value>
-  </data>
-  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 12</value>
-  </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>Align</value>
-  </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>659, 144</value>
-  </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 12</value>
-  </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>Repeat</value>
-  </data>
-  <data name="CB_RepeatType.Items" xml:space="preserve">
-    <value>no</value>
-  </data>
-  <data name="CB_RepeatType.Items1" xml:space="preserve">
-    <value>Horizontal</value>
-  </data>
-  <data name="CB_RepeatType.Items2" xml:space="preserve">
-    <value>Vertical</value>
-  </data>
-  <data name="CB_RepeatType.Items3" xml:space="preserve">
-    <value>All</value>
-  </data>
-  <data name="CB_RepeatType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>704, 141</value>
-  </data>
-  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 54</value>
-  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="notifyIcon1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIAB9UQEAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAAAAFv
@@ -1811,45 +1631,6 @@
         nkFItYQMVwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="notifyIcon1.Text" xml:space="preserve">
-    <value>VSCode Bacground Manager</value>
-  </data>
-  <data name="showWindow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
-  </data>
-  <data name="showWindow.Text" xml:space="preserve">
-    <value>Show window</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 6</value>
-  </data>
-  <data name="quit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
-  </data>
-  <data name="quit.Text" xml:space="preserve">
-    <value>Quit</value>
-  </data>
-  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>659, 170</value>
-  </data>
-  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 12</value>
-  </data>
-  <data name="label14.Text" xml:space="preserve">
-    <value>Opacity</value>
-  </data>
-  <data name="TB_Opacity.Location" type="System.Drawing.Point, System.Drawing">
-    <value>718, 167</value>
-  </data>
-  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>757, 170</value>
-  </data>
-  <data name="CB_UseFront.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 16</value>
-  </data>
-  <data name="CB_UseFront.Text" xml:space="preserve">
-    <value>Use Front Image</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIAB9UQEAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAAAAFv
@@ -3294,8 +3075,5 @@
         SRO2PYO7wM4dxos/gdiKB/peyEwhjFind6Q0bWAYO8ZxoO8TfbcWA9xBM2bJJshZ/dkU088qrf7O/w8u
         nkFItYQMVwAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>VSCode Background Manager</value>
   </data>
 </root>

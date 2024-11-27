@@ -17,6 +17,7 @@ namespace VSC_BackgroundSetting
 
         private int aliginType;
         private int repeatType;
+        private int opacityPercent;
         
         private int previewImgNum;
         private int singleInterval;
@@ -25,6 +26,7 @@ namespace VSC_BackgroundSetting
         public static bool isAnalysised = false;
 
         public bool useEnglish = false;
+        public bool useFront = false;
 
         public MainForm()
         {
@@ -53,7 +55,12 @@ namespace VSC_BackgroundSetting
             isSlideShow = SaveManager.Ins.data.isSlideShow;
             aliginType = SaveManager.Ins.data.AlignType;
             repeatType = SaveManager.Ins.data.RpeatType;
+            opacityPercent = SaveManager.Ins.data.OpacityPercent;
             isAnalysised = SaveManager.Ins.data.isAnalysised;
+
+            //强制更新
+            useFront = SaveManager.Ins.data.useFront;
+            CB_UseFront_CheckedChanged(null, null);
 
             TimerManager.Ins.Init(SlideShowTimer, OnTimerCompleted);
             TimerManager.Ins.onTick += OnTick;
@@ -72,6 +79,9 @@ namespace VSC_BackgroundSetting
 
             CB_AlignType.SelectedIndex = aliginType;
             CB_RepeatType.SelectedIndex = repeatType;
+            TB_Opacity.Text = opacityPercent.ToString();
+
+            CB_UseFront.Checked = useFront;
 
             if (!isAnalysised)
                 TimerManager.Ins.Stop();
@@ -417,6 +427,14 @@ namespace VSC_BackgroundSetting
 
             VSCSettings.Ins.SetbackgroundRepeatType(cssCode);
         }
+        private void TB_Opacity_TextChanged(object sender, EventArgs e)
+        {
+            opacityPercent = int.Parse(TB_Opacity.Text);
+            SaveManager.Ins.data.OpacityPercent = opacityPercent;
+            SaveManager.Ins.SaveData();
+
+            VSCSettings.Ins.SetBackgroundOpacity(opacityPercent);
+        }
         #endregion
 
         #region Timer
@@ -529,7 +547,6 @@ namespace VSC_BackgroundSetting
             int startIndex = TB_TargetPath.Text.Length - Path.GetFileName(TB_TargetPath.Text).Length;
             return realPath.Substring(startIndex, realPath.LastIndexOf('.') - startIndex);
         }
-
         #endregion
 
         #region Form
@@ -593,6 +610,14 @@ namespace VSC_BackgroundSetting
             useEnglish = !useEnglish;
             SaveManager.Ins.data.useEnglish = useEnglish;
             SaveManager.Ins.SaveData();
+        }
+        private void CB_UseFront_CheckedChanged(object sender, EventArgs e)
+        {
+            useFront = CB_UseFront.Checked;
+            SaveManager.Ins.data.useFront = useFront;
+            SaveManager.Ins.SaveData();
+
+            VSCSettings.Ins.SetUseFront(useFront);
         }
     }
 }

@@ -74,6 +74,10 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.quit = new System.Windows.Forms.ToolStripMenuItem();
             this.Btn_SwitchLanguage = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.TB_Opacity = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.CB_UseFront = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -87,8 +91,8 @@
             // 
             // Btn_SelectTargetPath
             // 
-            resources.ApplyResources(this.Btn_SelectTargetPath, "Btn_SelectTargetPath");
             this.Btn_SelectTargetPath.ForeColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.Btn_SelectTargetPath, "Btn_SelectTargetPath");
             this.Btn_SelectTargetPath.Name = "Btn_SelectTargetPath";
             this.Btn_SelectTargetPath.UseVisualStyleBackColor = true;
             this.Btn_SelectTargetPath.Click += new System.EventHandler(this.Btn_SelectTargetPath_Click);
@@ -200,8 +204,8 @@
             // 
             // imgPreview
             // 
-            resources.ApplyResources(this.imgPreview, "imgPreview");
             this.imgPreview.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            resources.ApplyResources(this.imgPreview, "imgPreview");
             this.imgPreview.BackgroundImageTiled = true;
             this.imgPreview.HideSelection = false;
             this.imgPreview.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
@@ -334,33 +338,33 @@
             // 
             // notifyIcon1
             // 
-            resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
             this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
+            resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
             // 
             // contextMenuStrip1
             // 
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showWindow,
             this.toolStripSeparator1,
             this.quit});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
             // showWindow
             // 
-            resources.ApplyResources(this.showWindow, "showWindow");
             this.showWindow.Name = "showWindow";
+            resources.ApplyResources(this.showWindow, "showWindow");
             this.showWindow.Click += new System.EventHandler(this.showWindow_Click);
             // 
             // toolStripSeparator1
             // 
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             this.toolStripSeparator1.Name = "toolStripSeparator1";
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
             // quit
             // 
-            resources.ApplyResources(this.quit, "quit");
             this.quit.Name = "quit";
+            resources.ApplyResources(this.quit, "quit");
             this.quit.Click += new System.EventHandler(this.quit_Click);
             // 
             // Btn_SwitchLanguage
@@ -370,10 +374,37 @@
             this.Btn_SwitchLanguage.UseVisualStyleBackColor = true;
             this.Btn_SwitchLanguage.Click += new System.EventHandler(this.Btn_SwitchLanguage_Click);
             // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.Name = "label14";
+            // 
+            // TB_Opacity
+            // 
+            resources.ApplyResources(this.TB_Opacity, "TB_Opacity");
+            this.TB_Opacity.Name = "TB_Opacity";
+            this.TB_Opacity.TextChanged += new System.EventHandler(this.TB_Opacity_TextChanged);
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.Name = "label15";
+            // 
+            // CB_UseFront
+            // 
+            resources.ApplyResources(this.CB_UseFront, "CB_UseFront");
+            this.CB_UseFront.Name = "CB_UseFront";
+            this.CB_UseFront.UseVisualStyleBackColor = true;
+            this.CB_UseFront.CheckedChanged += new System.EventHandler(this.CB_UseFront_CheckedChanged);
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.CB_UseFront);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.TB_Opacity);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.Btn_SwitchLanguage);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.CB_RepeatType);
@@ -411,7 +442,6 @@
             this.Controls.Add(this.BGAnalysisBtn);
             this.MaximizeBox = false;
             this.Name = "MainForm";
-            this.ShowInTaskbar = false;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Resize += new System.EventHandler(this.MainForm_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
@@ -467,6 +497,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn BGnum;
         private System.Windows.Forms.Button Btn_SwitchLanguage;
         private System.Windows.Forms.ComboBox CB_AlignType;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox TB_Opacity;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.CheckBox CB_UseFront;
     }
 }
 

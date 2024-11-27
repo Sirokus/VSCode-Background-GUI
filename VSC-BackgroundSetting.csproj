@@ -79,6 +79,9 @@
     <Compile Include="Utility\SaveManager.cs" />
     <Compile Include="Utility\TimerManager.cs" />
     <Compile Include="Utility\VSCSettings.cs" />
+    <EmbeddedResource Include="MainForm.byn.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.en.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

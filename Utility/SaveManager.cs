@@ -17,9 +17,11 @@ public class Data
     public bool isSlideShow = false;
     public int AlignType = 1;
     public int RpeatType = 0;
+    public int OpacityPercent = 30;
 
     public bool isAnalysised = false;
     public bool useEnglish = false;
+    public bool useFront = false;
 }
 
 public class SaveManager
