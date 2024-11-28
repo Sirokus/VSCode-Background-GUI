@@ -91,8 +91,8 @@
             // 
             // Btn_SelectTargetPath
             // 
-            this.Btn_SelectTargetPath.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.Btn_SelectTargetPath, "Btn_SelectTargetPath");
+            this.Btn_SelectTargetPath.ForeColor = System.Drawing.Color.Black;
             this.Btn_SelectTargetPath.Name = "Btn_SelectTargetPath";
             this.Btn_SelectTargetPath.UseVisualStyleBackColor = true;
             this.Btn_SelectTargetPath.Click += new System.EventHandler(this.Btn_SelectTargetPath_Click);
@@ -204,8 +204,8 @@
             // 
             // imgPreview
             // 
-            this.imgPreview.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             resources.ApplyResources(this.imgPreview, "imgPreview");
+            this.imgPreview.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.imgPreview.BackgroundImageTiled = true;
             this.imgPreview.HideSelection = false;
             this.imgPreview.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
@@ -338,33 +338,33 @@
             // 
             // notifyIcon1
             // 
-            this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
             resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
+            this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
             // 
             // contextMenuStrip1
             // 
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showWindow,
             this.toolStripSeparator1,
             this.quit});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
             // showWindow
             // 
-            this.showWindow.Name = "showWindow";
             resources.ApplyResources(this.showWindow, "showWindow");
+            this.showWindow.Name = "showWindow";
             this.showWindow.Click += new System.EventHandler(this.showWindow_Click);
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
             // 
             // quit
             // 
-            this.quit.Name = "quit";
             resources.ApplyResources(this.quit, "quit");
+            this.quit.Name = "quit";
             this.quit.Click += new System.EventHandler(this.quit_Click);
             // 
             // Btn_SwitchLanguage

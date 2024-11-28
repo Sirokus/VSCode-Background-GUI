@@ -363,6 +363,21 @@
   <data name="CB_RepeatType.Location" type="System.Drawing.Point, System.Drawing">
     <value>704, 141</value>
   </data>
+  <data name="showWindow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 22</value>
+  </data>
+  <data name="showWindow.Text" xml:space="preserve">
+    <value>Show window</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 6</value>
+  </data>
+  <data name="quit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 22</value>
+  </data>
+  <data name="quit.Text" xml:space="preserve">
+    <value>Quit</value>
+  </data>
   <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 54</value>
   </data>
@@ -1813,21 +1828,6 @@
   </data>
   <data name="notifyIcon1.Text" xml:space="preserve">
     <value>VSCode Bacground Manager</value>
-  </data>
-  <data name="showWindow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
-  </data>
-  <data name="showWindow.Text" xml:space="preserve">
-    <value>Show window</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 6</value>
-  </data>
-  <data name="quit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
-  </data>
-  <data name="quit.Text" xml:space="preserve">
-    <value>Quit</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
     <value>659, 170</value>

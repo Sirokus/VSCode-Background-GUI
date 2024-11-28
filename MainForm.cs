@@ -680,7 +680,7 @@ namespace VSC_BackgroundSetting
 
             foreach (Control ct in this.Controls)//循环当前界面所有的控件
             {
-                if(ct as TextBox != null)
+                if(ct.Name == "TB_TargetPath" || ct.Name == "TB_settingsPath")
                     continue;
 
                 resources.ApplyResources(ct, ct.Name);
