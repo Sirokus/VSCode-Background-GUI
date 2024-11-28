@@ -4,6 +4,7 @@ using System.Drawing;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace VSC_BackgroundSetting
 {
@@ -47,6 +48,7 @@ namespace VSC_BackgroundSetting
             if (useEnglish)
                 Btn_SwitchLanguage_Click(null, null);
 
+            //读取并缓存存储的数据
             usedTextPath = SaveManager.Ins.data.usedPath;
             previewImgNum = SaveManager.Ins.data.previewImgNum;
             singleInterval = SaveManager.Ins.data.singleInterval;
@@ -57,14 +59,15 @@ namespace VSC_BackgroundSetting
             repeatType = SaveManager.Ins.data.RpeatType;
             opacityPercent = SaveManager.Ins.data.OpacityPercent;
             isAnalysised = SaveManager.Ins.data.isAnalysised;
-
-            //强制更新
             useFront = SaveManager.Ins.data.useFront;
+            //强制更新，保证写入VSCode的Json文件内
             CB_UseFront_CheckedChanged(null, null);
 
+            //初始化定时器，用于定时切换
             TimerManager.Ins.Init(SlideShowTimer, OnTimerCompleted);
             TimerManager.Ins.onTick += OnTick;
 
+            //将存储的数据显示在界面上
             TB_TargetPath.Text = SaveManager.Ins.data.analysisPath;
             TB_settingsPath.Text = SaveManager.Ins.data.settingsPath;
             TB_MaxBGgroupNum.Text = SaveManager.Ins.data.MaxSingleFileBGNum.ToString();
@@ -83,6 +86,7 @@ namespace VSC_BackgroundSetting
 
             CB_UseFront.Checked = useFront;
 
+            //没有解析则停止计时
             if (!isAnalysised)
                 TimerManager.Ins.Stop();
         }
@@ -95,17 +99,44 @@ namespace VSC_BackgroundSetting
             dialog.Description  = "请选择需要解析的目标根文件夹";
             if (dialog.ShowDialog() == DialogResult.OK)
             {
+                //获取选择路径
                 TB_TargetPath.Text = dialog.SelectedPath;
 
-                SaveManager.Ins.data.analysisPath = dialog.SelectedPath;
-                SaveManager.Ins.SaveData();
+                //选择后立刻判断是否已经被解析过，是则立即更新
+                string manifestPath = GetManifestPath();
+                if(!File.Exists(manifestPath))
+                    return;
+
+                //没有任何活跃的分析文件时，立即存储为当前值
+                if (!SaveManager.Ins.data.isAnalysised)
+                {
+                    SaveManager.Ins.data.analysisPath = TB_TargetPath.Text;
+                    SaveManager.Ins.SaveData();
+                }
+
+                isAnalysised = true;
+
+                //更新图表
+                UpdateGrid();
             }
         }
 
         private void TB_TargetPath_TextChanged(object sender, EventArgs e)
         {
-            SaveManager.Ins.data.analysisPath = TB_TargetPath.Text;
-            SaveManager.Ins.SaveData();
+            string manifestPath = GetManifestPath();
+            if (!File.Exists(manifestPath))
+                return;
+
+            //没有任何活跃的分析文件时，立即存储为当前值
+            if (!SaveManager.Ins.data.isAnalysised)
+            {
+                SaveManager.Ins.data.analysisPath = TB_TargetPath.Text;
+                SaveManager.Ins.SaveData();
+            }
+
+            isAnalysised = true;
+
+            UpdateGrid();
         }
 
         private void Btn_SelectSettingsPath_Click(object sender, EventArgs e)
@@ -145,6 +176,13 @@ namespace VSC_BackgroundSetting
                 return;
             }
 
+            //没有任何活跃的分析文件时，立即存储为当前值
+            if(!SaveManager.Ins.data.isAnalysised)
+            {
+                SaveManager.Ins.data.analysisPath = TB_TargetPath.Text;
+                SaveManager.Ins.SaveData();
+            }
+
             BGAnalysis.Ins.Analysis(TB_TargetPath.Text);
 
             isAnalysised = true;
@@ -178,6 +216,11 @@ namespace VSC_BackgroundSetting
             imgPreview.Items.Clear();
 
             TB_CurSelectedGroup.Text = "";
+
+            //允许用户清除非活动文件夹的解析文件而不影响正在运行的文件夹
+            if (TB_TargetPath.Text != SaveManager.Ins.data.analysisPath)
+                return;
+
             TB_CurUsedGroup.Text = "";
             TB_RemainGroupTimes.Text = "";
 
@@ -332,6 +375,9 @@ namespace VSC_BackgroundSetting
             if (!isAnalysised)
                 return;
 
+            SaveManager.Ins.data.analysisPath = TB_TargetPath.Text;
+            SaveManager.Ins.SaveData();
+
             SetNewGroupToVSC(selectedTextPath);
 
             TimerManager.Ins.Start((int)(groupInterval * 60));
@@ -475,7 +521,7 @@ namespace VSC_BackgroundSetting
         private void OnTimerCompleted()
         {
             //从Manifest中选一个新的壁纸
-            string manifestPath = GetManifestPath();
+            string manifestPath = SaveManager.Ins.GetManifestPath();
             List<string> txtPaths = BGAnalysis.Ins.GetPaths(manifestPath);
 
             int curIndex = -1;
@@ -491,20 +537,22 @@ namespace VSC_BackgroundSetting
             if (curIndex == -1)
                 return;
 
-            //下一个组
+            //下一个壁纸组的文件位置
             string nextTxtPath = txtPaths[(curIndex + 1) % txtPaths.Count];
             List<string> imgPaths = BGAnalysis.Ins.GetPaths(nextTxtPath);
 
+            //如果需要打乱，则将其进行打乱并写回txt文件
             if (isAutoRandom)
+            {
                 RandomPathList(ref imgPaths);
+                BGAnalysis.Ins.WriteTxt(nextTxtPath, PathListToString(imgPaths));
+            }
 
-            BGAnalysis.Ins.WriteTxt(nextTxtPath, PathListToString(imgPaths));
-
-            //切换新的Group
+            //切换新的Group（应用到VSCode的settings.json）
             SetNewGroupToVSC(nextTxtPath);
 
             //重置定时器
-            if (isAnalysised)
+            if (SaveManager.Ins.data.isAnalysised)
                 TimerManager.Ins.Start((int)(groupInterval * 60));
         }
         #endregion
