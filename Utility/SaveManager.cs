@@ -83,4 +83,11 @@ public class SaveManager
             File.Delete(jsonPath);
         File.WriteAllText(jsonPath, content);
     }
+
+    public string GetManifestPath()
+    {
+        if (string.IsNullOrEmpty(data.analysisPath))
+            return null;
+        return data.analysisPath.Replace("\\", "/") + "/" + Path.GetFileName(data.analysisPath) + ".txt";
+    }
 }

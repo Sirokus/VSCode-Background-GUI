@@ -24,13 +24,16 @@ public class BGAnalysis
 
     public void Analysis(string analysisPath)
     {
-        MaxSingleFileBGNum = SaveManager.Ins.data.MaxSingleFileBGNum;
+        //预先清除已有的文件
+        ClearAllTxt(analysisPath);
 
-        Queue<string> queue = new Queue<string>();
-        queue.Enqueue(analysisPath);
+        MaxSingleFileBGNum = SaveManager.Ins.data.MaxSingleFileBGNum;
 
         StringBuilder manifest = new StringBuilder();
         int allFileNum = 0;
+
+        Queue<string> queue = new Queue<string>();
+        queue.Enqueue(analysisPath);
 
         //迭代创建索引文件，一个文件夹的索引文件在其内部，且与文件夹同名
         //索引文件每100个分为一组
@@ -42,13 +45,6 @@ public class BGAnalysis
 
             //当前文件夹内的的所有壁纸文件路径
             List<string> filePaths = GetAllImagePath(path);
-
-            //先删除所有txt文件，因为接下来需要创建用于标识当前壁纸路径的txt文件，不需要其他多余的或者上次残留的
-            string[] remainTxtPaths = Directory.GetFiles(path, "*.txt", SearchOption.TopDirectoryOnly);
-            for (int i = 0; i < remainTxtPaths.Length; i++)
-            {
-                File.Delete(remainTxtPaths[i]);
-            }
 
             //创建并写入文件中，壁纸按每100个分一组
             StringBuilder stringBuilder = new StringBuilder();
@@ -117,13 +113,21 @@ public class BGAnalysis
         return filePaths;
     }
 
-    public void ClearAllTxt(string analysisPath)
+    public bool ClearAllTxt(string analysisPath)
     {
-        string[] txts = Directory.GetFiles(analysisPath, "*.txt", SearchOption.AllDirectories);
-        foreach (string txt in txts)
-        {
-            File.Delete(txt);
-        }
+        //获取根目录索引文件
+        string manifestPath = Path.Combine(analysisPath, Path.GetFileName(analysisPath) + ".txt");
+        if(!File.Exists(manifestPath))
+            return false;
+
+        //通过索引文件删除所有解析文件
+        List<string> txtPathList = GetPaths(manifestPath);
+        txtPathList.ForEach(File.Delete);
+
+        //删除索引文件
+        File.Delete(manifestPath);
+
+        return true;
     }
 
     public List<string> GetPaths(string txtPath)
