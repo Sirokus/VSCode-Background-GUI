@@ -6,7 +6,7 @@ using System.Text;
 [Serializable]
 public class Data
 {
-    public string analysisPath = "C:\\";
+    public string analysisPath = "";
     public string settingsPath = "C:\\Users\\Administrator\\AppData\\Roaming\\Code\\User\\settings.json";
     public string usedPath = "";
     public int MaxSingleFileBGNum = 100;

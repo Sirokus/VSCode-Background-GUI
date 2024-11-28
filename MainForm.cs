@@ -130,6 +130,21 @@ namespace VSC_BackgroundSetting
 
         private void Btn_Analysis_Click(object sender, EventArgs e)
         {
+            if (TB_TargetPath.Text == "")
+            {
+                MessageBox.Show("你必须指定需要解析的壁纸文件根目录", "Warning",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string tmp = TB_TargetPath.Text;
+            if (tmp == tmp[0] + ":/" || tmp == tmp[0] + ":\\")
+            {
+                MessageBox.Show("安全起见，禁止使用根目录作为解析文件目录！", "Warning",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             BGAnalysis.Ins.Analysis(TB_TargetPath.Text);
 
             isAnalysised = true;
@@ -141,6 +156,21 @@ namespace VSC_BackgroundSetting
 
         private void Btn_ClearTxt_Click(object sender, EventArgs e)
         {
+            if (TB_TargetPath.Text == "")
+            {
+                MessageBox.Show("你必须指定需要清空的壁纸文件根目录", "Warning", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string tmp = TB_TargetPath.Text;
+            if (tmp == tmp[0] + ":/" || tmp == tmp[0] + ":\\")
+            {
+                MessageBox.Show("安全起见，禁止使用根目录作为清空文件目录！", "Warning",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             BGAnalysis.Ins.ClearAllTxt(TB_TargetPath.Text);
 
             dataGrid.Rows.Clear();
@@ -594,12 +624,12 @@ namespace VSC_BackgroundSetting
             currentLcid = (currentLcid == 2052) ? 1033 : 2052;//这里的2052是中文   1033是英文
             System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(currentLcid);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            //resources.ApplyResources(label1, "label1");
-            //resources.ApplyResources(button1, "button1");
-            //resources.ApplyResources(this, "$this");
 
             foreach (Control ct in this.Controls)//循环当前界面所有的控件
             {
+                if(ct as TextBox != null)
+                    continue;
+
                 resources.ApplyResources(ct, ct.Name);
                 if (ct.HasChildren)
                 {

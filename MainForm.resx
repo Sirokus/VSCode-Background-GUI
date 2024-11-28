@@ -206,9 +206,6 @@
   <data name="TB_TargetPath.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="TB_TargetPath.Text" xml:space="preserve">
-    <value>C:\</value>
-  </data>
   <data name="&gt;&gt;TB_TargetPath.Name" xml:space="preserve">
     <value>TB_TargetPath</value>
   </data>
@@ -272,24 +269,15 @@
   <data name="&gt;&gt;TB_MaxBGgroupNum.ZOrder" xml:space="preserve">
     <value>34</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="dataGrid.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
   <metadata name="BGgroup.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="BGgroup.HeaderText" xml:space="preserve">
-    <value>壁纸组</value>
-  </data>
-  <data name="BGgroup.Width" type="System.Int32, mscorlib">
-    <value>300</value>
-  </data>
   <metadata name="BGnum.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="BGnum.HeaderText" xml:space="preserve">
-    <value>壁纸数量</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dataGrid.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
   </data>
   <data name="dataGrid.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 139</value>
@@ -311,6 +299,21 @@
   </data>
   <data name="&gt;&gt;dataGrid.ZOrder" xml:space="preserve">
     <value>33</value>
+  </data>
+  <metadata name="BGgroup.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="BGgroup.HeaderText" xml:space="preserve">
+    <value>壁纸组</value>
+  </data>
+  <data name="BGgroup.Width" type="System.Int32, mscorlib">
+    <value>300</value>
+  </data>
+  <metadata name="BGnum.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="BGnum.HeaderText" xml:space="preserve">
+    <value>壁纸数量</value>
   </data>
   <data name="Btn_SelectSettingsPath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1193,21 +1196,6 @@
   <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>370, 16</value>
   </metadata>
-  <data name="showWindow.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="showWindow.Text" xml:space="preserve">
-    <value>显示窗口</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 6</value>
-  </data>
-  <data name="quit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 22</value>
-  </data>
-  <data name="quit.Text" xml:space="preserve">
-    <value>退出</value>
-  </data>
   <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 54</value>
   </data>
@@ -2668,6 +2656,21 @@
   <data name="notifyIcon1.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="showWindow.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="showWindow.Text" xml:space="preserve">
+    <value>显示窗口</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 6</value>
+  </data>
+  <data name="quit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 22</value>
+  </data>
+  <data name="quit.Text" xml:space="preserve">
+    <value>退出</value>
+  </data>
   <data name="Btn_SwitchLanguage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
@@ -2818,6 +2821,9 @@
   <data name="&gt;&gt;CB_UseFront.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
